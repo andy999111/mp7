@@ -130,75 +130,7 @@ function mp6_add_body_class_backend( $classes ) {
 add_action( 'wp_head', 'mp6_override_toolbar_margin', 11 );
 function mp6_override_toolbar_margin() {
 	if ( is_admin_bar_showing() ) : ?>
-<style type="text/css" media="screen">
-	html { margin-top: 32px !important; }
-	* html body { margin-top: 32px !important; }
-	.sidebarholder {top: 82px;   }
-	.header {top: 32px; }
-	.searchblock { top:82px; }
-	body .sidebar-marg { top:132px; }
-	.sharing {
-	top:82px;
-	
-	}
-	
-	.commentswrapper {
-	top:82px;
-	
-	}
-	
-	.com-fix {
-	top:82px;
-	
-	}
-	
-	#wpadminbar {
-	border-bottom: 1px solid #2f2f2f;
-	background-color: #1f1f1f!important;
-	}
-	
-	#wp-admin-bar-new-content-default {display: none; }
-	
-	
-	
-	@media screen and (max-width:800px) { 
-	.sidebarholder {
-	top: 92px;
-	
-	}
-	.header {
-	top: 47px;
-	}
-	.searchblock { top:92px; }
-	body .sidebar-marg {
-	top:136px;
-	
-	}
-	.sharing {
-	top:77px;
-	}
-	
-	.commentswrapper {
-	top:77px;
-	
-	}
-	
-	.center {
-	padding-top: 61px;
-	
-	}
-	
-	.com-fix {
-	top:77px;
-	
-	}
-	
-	.sharing {
-	top:92px;
-	}
-	
-	}
-</style>
+
 <?php endif;
 
 }
